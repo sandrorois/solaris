@@ -2,6 +2,10 @@ html, body {
     overflow-x: hidden;
 }
 
+    header{
+        display: none;
+    }
+
 body {
     background-image: url(/src/img/palm-leaves-shadow-beige\ 1.jpg);
     background-attachment: fixed;
@@ -303,6 +307,10 @@ td, tr, th {
 /* Extra pequeno (xs) */
 @media (min-width: 100px) and (max-width: 575.98px) {
 
+    header{
+        display: block;
+    }
+    
     body {
         background-image: none;
     }
