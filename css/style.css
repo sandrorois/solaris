@@ -3,7 +3,7 @@ html, body {
 }
 
     header{
-        display: none;
+        display: block;
     }
 
 body {
@@ -68,6 +68,9 @@ p {
     font-weight:bold;
 }
 
+.text-5{
+    font-size: 35px;
+}
 
 /* Tabelas */
 
@@ -89,14 +92,14 @@ td, tr, th {
 
 /* button */
 .btn-solaris {
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: #E67E3C;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 600;
     font-style: normal;
     color: white;
     transition: transform 0.5s ease;
-    padding: 10px 40px;
+    padding: 10px 30px;
     
 
 }
@@ -197,11 +200,7 @@ td, tr, th {
     padding-right: 0;
 }
 
-.col-12 {
-    width: 100% !important;
-    padding: 0; /* Remova se houver padding indesejado */
-    margin: 0; /* Remova se houver margem indesejada */
-}
+
 
 
 
@@ -230,8 +229,6 @@ td, tr, th {
 #section-7{
     background-color: #F2BE9D;
     padding: 20px 0px;
-    
-   
 }
 
 
@@ -315,6 +312,8 @@ td, tr, th {
         background-image: none;
     }
     
+
+    
     .img-dep {
         position: relative;
         right: 0px;
@@ -355,10 +354,14 @@ td, tr, th {
         display: none;
             }
 
-}
+
 
 /* Pequeno (sm) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+    header{
+        display: block;
+    }
 
     body {
         background-image: none;
@@ -396,6 +399,9 @@ display: none;
 
 /* Médio (md) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+
+
 
     .img-dep {
         position: relative;
