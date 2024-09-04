@@ -2,10 +2,6 @@ html, body {
     overflow-x: hidden;
 }
 
-    header{
-        display: block;
-    }
-
 body {
     background-image: url(/src/img/palm-leaves-shadow-beige\ 1.jpg);
     background-attachment: fixed;
@@ -63,13 +59,17 @@ p {
 }
 
 .text-4{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    font-weight:bold;
 }
 
 .text-5{
-    font-size: 35px;
+    font-size: 45px;
+}
+
+.text-6{
+    font-size: 55px;
+    word-spacing: -10px;
 }
 
 /* Tabelas */
@@ -82,7 +82,7 @@ table {
 
 td, tr, th {
     padding: 10px;
-    text-align: center;
+    
 }
 
 .td-1{
@@ -92,14 +92,13 @@ td, tr, th {
 
 /* button */
 .btn-solaris {
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #E67E3C;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 600;
     font-style: normal;
     color: white;
     transition: transform 0.5s ease;
-    padding: 10px 30px;
     
 
 }
@@ -165,11 +164,16 @@ td, tr, th {
 #destaque-box {
     background-color: #E67E3C;
     color: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 15px;
     margin: auto;
 }
 
+
+#linha{
+    transform: scaleX(-1);
+
+}
 
 
 
@@ -177,11 +181,14 @@ td, tr, th {
 
 .depoimento {
     padding: 15px;
-    border: solid 3px #E67E3C;
+    border: solid 1px #E67E3C;
     border-radius: 50px;
     min-width: 250px;
     max-width: 70%;
     margin: 10px;
+    padding-left: 25px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .img-dep {
@@ -200,12 +207,18 @@ td, tr, th {
     padding-right: 0;
 }
 
-
+.col-12 {
+    width: 100% !important;
+    padding: 0; /* Remova se houver padding indesejado */
+    margin: 0; /* Remova se houver margem indesejada */
+}
 
 
 
 
 /* Configurações de Seções */
+
+
 
 #section-3{
     background-image: url(/src/img/ondas-fundo-bronzeador.png);
@@ -229,6 +242,8 @@ td, tr, th {
 #section-7{
     background-color: #F2BE9D;
     padding: 20px 0px;
+    
+   
 }
 
 
@@ -304,16 +319,10 @@ td, tr, th {
 /* Extra pequeno (xs) */
 @media (min-width: 100px) and (max-width: 575.98px) {
 
-    header{
-        display: block;
-    }
-    
-    body {
+    body{
         background-image: none;
     }
-    
 
-    
     .img-dep {
         position: relative;
         right: 0px;
@@ -324,8 +333,13 @@ td, tr, th {
     }
 
     .gradient{
-        margin: 0 -10px;
+        margin:  -5px;
         padding: 0px 20px;
+    }
+
+    .text-box-2{
+        margin: 0;
+        padding: 20px 0px;
     }
 
     .text-3{
@@ -333,20 +347,22 @@ td, tr, th {
     }
 
     .text-4{
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: -15px;
+    }
+
+    .text-5{
         font-size: 35px;
-        text-align: center;
-        margin-left: -20px;
-        
+    }
+
+    .text-6{
+        font-size: 75px;
+
     }
 
     footer{
         font-size:12px ;
-    }
-
-    .text-box-2{
-        padding: 50px 10px;
-        margin: 0 5px;
-    }
     }
 
     
@@ -354,19 +370,10 @@ td, tr, th {
         display: none;
             }
 
-
+}
 
 /* Pequeno (sm) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-
-    header{
-        display: block;
-    }
-
-    body {
-        background-image: none;
-    }
-
 
     .img-dep {
         position: relative;
@@ -378,7 +385,7 @@ td, tr, th {
     }
 
     .gradient{
-        margin: 0 -10px;
+        margin: 0 -5px;
     }
 
     .text-3{
@@ -386,9 +393,16 @@ td, tr, th {
     }
 
     .text-4{
-        font-size: 40px;
-        text-align: center;
-        margin-left: -20px;
+        font-size: 25px;
+    }
+
+    .text-5{
+        font-size: 35px;
+    }
+
+    .text-6{
+        font-size: 75px;
+
     }
 
     #woman-img{
@@ -400,23 +414,25 @@ display: none;
 /* Médio (md) */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
-
-
-
     .img-dep {
         position: relative;
         right: 20px;
     }
 
-    .gradient{
-        margin: 0 15px;
-    }
-
     #woman-img{
-        top: -412px;
-        left: -240px; 
+        top: -420px;
+        left: -200px; 
     }
 
+    .text-5{
+        font-size: 35px;
+        
+    }
+
+    .text-6{
+        font-size: 75px;
+
+    }
 
 }
 
@@ -435,12 +451,17 @@ display: none;
         
     }
 
+    .text-6{
+        font-size: 75px;
+
+    }
+
     .gradient{
-        margin:  -5px;
+        margin:  0px;
     }
 
     #woman-img{
-        top: -419px;
+        top: -415px;
         left: -100px;
         
     }
@@ -449,11 +470,13 @@ display: none;
 /* Extra grande (xl) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
 
+    .text-6{
+        font-size: 75px;
+
+    }
+
     #woman-img{
         min-height: 820px;
-        top: -419px;
-        left: -100px;
-        
     }
 
 
@@ -464,8 +487,7 @@ display: none;
 
     #woman-img{
         min-height: 820px;
-        top: -419px;
-        left: -100px;
+        top: -420px;   
     }
 
 }
