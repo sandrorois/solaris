@@ -76,7 +76,9 @@ p {
 
 
 table {
-    margin: auto;
+    width: 100%;
+    table-layout: fixed; 
+    border-collapse: collapse;
     
 }
 
@@ -87,6 +89,9 @@ td, tr, th {
 
 .td-1{
     width: 80%;
+    word-wrap: break-word; /* Evita que o texto estoure os limites */
+    overflow-wrap: break-word;
+    margin: 0;
 }
 
 
