@@ -219,6 +219,12 @@ td, tr, th {
 }
 
 
+/* Imagens*/
+
+.img-2{
+    border-radius: 15px;
+}
+
 
 
 /* Configurações de Seções */
@@ -358,7 +364,7 @@ td, tr, th {
     }
 
     .text-5{
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .text-6{
@@ -402,7 +408,7 @@ td, tr, th {
     }
 
     .text-5{
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .text-6{
@@ -430,7 +436,7 @@ display: none;
     }
 
     .text-5{
-        font-size: 35px;
+        font-size: 30px;
         
     }
 
@@ -454,6 +460,11 @@ display: none;
         align-content: center;
         padding: 0px;
         
+    }
+
+    .text-5{
+        font-size: 35px;
+
     }
 
     .text-6{
